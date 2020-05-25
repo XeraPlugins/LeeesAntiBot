@@ -1,0 +1,41 @@
+#LeeesAntiBot V3.0.0 Configuration
+#use & for chat colours in the messages
+#please note this plugin uses recaptcha only
+#https://www.google.com/recaptcha/
+#blacklist command can only be done via console
+#permission for this is whitelist.admin
+
+#not whitelisted player join message
+not-whitelisted-message:
+  - "&1-----------------------------------------------"
+  - "&6[AntiBot] Welcome"
+  - "&6Please verify you're not a bot at"
+  - "&chttp://whitelist.6b6t.org &6to play"
+  - "&6or you will be kicked if you dont"
+  - "&1-----------------------------------------------"
+
+#whitelisted player join message
+whitelisted-message:
+  - "&1-----------------------------------------------"
+  - "&6Welcome back you are not a bot :)"
+  - "&1-----------------------------------------------"
+
+#blacklisted player join message
+blacklisted-message:
+  - "&1-----------------------------------------------"
+  - "&6You are a confirmed bot if not please contact us"
+  - "&1-----------------------------------------------"
+
+#count down kick in seconds
+countdownkick: 25
+
+#kick messages
+kickmessage: "&6[AntiBot] please verify your not a bot at http://whitelist.6b6t.org"
+blacklistedkick: "&6[AntiBot] you are confirmed to be a bot if this is false contact us"
+
+#webpage related stuff use recaptcha for your site and private key this only works with recaptcha
+#you must also put the site key in the index.html
+port: 25594
+#you must also put the site key in the index.html
+sitekey: "6LfYDeMUAAAAAG0I-RkGVT49l1V0IgazaT2aKBhI"
+privatekey: "6LfYDeMUAAAAAOzZgErh--4AjdA8kzEHy22h5rys"
