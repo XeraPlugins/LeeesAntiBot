@@ -1,7 +1,7 @@
 name: LeeesAntiBot
 version: 3.0.0
-main: Leees.Chat.Whitelist.Main
-api-version: 1.13
+main: Main
+api-version: 1.16
 authors: [Nate, Legault]
 description: Chat whitelist plugin for anarchy servers
 website: http://6b6t.org

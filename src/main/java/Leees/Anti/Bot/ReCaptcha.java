@@ -1,4 +1,4 @@
-package Leees.Chat.Whitelist;
+package Leees.Anti.Bot;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -45,32 +45,6 @@ public class ReCaptcha
             } catch (IOException e) {
             }
             String response = contentBuilder.toString();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
@@ -143,9 +117,6 @@ public class ReCaptcha
         sitekey = Main.getPlugin().getConfig().getString("sitekey");
         try {
             String url = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + response;
-
-
-
             InputStream res = (new URL(url)).openStream();
             BufferedReader rd = new BufferedReader(new InputStreamReader(res, Charset.forName("UTF-8")));
             jsonText = "";
